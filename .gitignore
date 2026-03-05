@@ -1,5 +1,5 @@
 # ==============================================================================
-# .gitignore for Academic Claude Code Projects
+# .gitignore for Codex-First Academic Projects
 # ==============================================================================
 
 # LaTeX build artifacts
@@ -36,10 +36,9 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Claude Code local files (not shared across machines)
-.claude/settings.local.json
-.claude/state/
-CLAUDE.local.md
+# Codex/local assistant files (not shared across machines)
+.codex/
+AGENTS.local.md
 
 # IDE
 .vscode/

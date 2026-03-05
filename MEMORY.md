@@ -51,7 +51,7 @@ When a mistake is corrected, append a `[LEARN:category]` entry below.
 
 ## Skill Creation
 
-[LEARN:skills] Effective skill descriptions use trigger phrases users actually say: "check citations", "format results", "validate protocol" → Claude knows when to load skill.
+[LEARN:skills] Effective skill descriptions use trigger phrases users actually say: "check citations", "format results", "validate protocol" → Codex can apply the right workflow reliably.
 
 [LEARN:skills] Skills need 3 sections minimum: Instructions (step-by-step), Examples (concrete scenarios), Troubleshooting (common errors) → users can debug independently.
 
