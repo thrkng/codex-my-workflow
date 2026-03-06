@@ -2,6 +2,8 @@
 
 Codex-first template for academic production workflows: lecture slides, papers, replication, and analysis.
 
+Adapted from [Pedro H. C. Sant'Anna](https://github.com/pedrohcgs)'s [My Claude Code Setup](https://psantanna.com/claude-code-my-workflow/).
+
 ## Quick Start
 
 1. Clone this repository.
