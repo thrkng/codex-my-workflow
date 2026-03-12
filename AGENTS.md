@@ -65,5 +65,6 @@ python scripts/install_repo_skills.py
 ## Notes
 - This repository intentionally targets Codex-first collaboration.
 - Legacy Claude-specific configuration has been removed.
-- Imported R skills are stored under `.agents/skills`.
+- Imported R and Quarto skills are stored under `.agents/skills`.
 - Use `python scripts/install_repo_skills.py` to copy repository skills into `$CODEX_HOME/skills` for global reuse.
+

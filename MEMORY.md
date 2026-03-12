@@ -1,4 +1,4 @@
-# Project Memory
+﻿# Project Memory
 
 Corrections and learned facts that persist across sessions.
 When a mistake is corrected, append a `[LEARN:category]` entry below.
@@ -9,9 +9,9 @@ When a mistake is corrected, append a `[LEARN:category]` entry below.
 
 ## Workflow Patterns
 
-[LEARN:workflow] Requirements specification phase catches ambiguity before planning → reduces rework 30-50%. Use spec-then-plan for complex/ambiguous tasks (>1 hour or >3 files).
+[LEARN:workflow] Requirements specification phase catches ambiguity before planning 竊・reduces rework 30-50%. Use spec-then-plan for complex/ambiguous tasks (>1 hour or >3 files).
 
-[LEARN:workflow] Spec-then-plan protocol: AskUserQuestion (3-5 questions) → create `quality_reports/specs/YYYY-MM-DD_description.md` with MUST/SHOULD/MAY requirements → declare clarity status (CLEAR/ASSUMED/BLOCKED) → get approval → then draft plan.
+[LEARN:workflow] Spec-then-plan protocol: AskUserQuestion (3-5 questions) 竊・create `quality_reports/specs/YYYY-MM-DD_description.md` with MUST/SHOULD/MAY requirements 竊・declare clarity status (CLEAR/ASSUMED/BLOCKED) 竊・get approval 竊・then draft plan.
 
 [LEARN:workflow] Context survival before compression: (1) Update MEMORY.md with [LEARN] entries, (2) Ensure session log current (last 10 min), (3) Active plan saved to disk, (4) Open questions documented. The pre-compact hook displays checklist.
 
@@ -51,24 +51,27 @@ When a mistake is corrected, append a `[LEARN:category]` entry below.
 
 ## Skill Creation
 
-[LEARN:skills] Effective skill descriptions use trigger phrases users actually say: "check citations", "format results", "validate protocol" → Codex can apply the right workflow reliably.
+[LEARN:skills] Effective skill descriptions use trigger phrases users actually say: "check citations", "format results", "validate protocol" 竊・Codex can apply the right workflow reliably.
 
-[LEARN:skills] Skills need 3 sections minimum: Instructions (step-by-step), Examples (concrete scenarios), Troubleshooting (common errors) → users can debug independently.
+[LEARN:skills] Skills need 3 sections minimum: Instructions (step-by-step), Examples (concrete scenarios), Troubleshooting (common errors) 竊・users can debug independently.
 
-[LEARN:skills] Domain-specific examples beat generic ones: citation checker (psychology), protocol validator (biology), regression formatter (economics) → shows adaptability.
+[LEARN:skills] Domain-specific examples beat generic ones: citation checker (psychology), protocol validator (biology), regression formatter (economics) 竊・shows adaptability.
 
 ## Memory System
 
-[LEARN:memory] Two-tier memory solves template vs working project tension: MEMORY.md (generic patterns, committed), personal-memory.md (machine-specific, gitignored) → cross-machine sync + local privacy.
+[LEARN:memory] Two-tier memory solves template vs working project tension: MEMORY.md (generic patterns, committed), personal-memory.md (machine-specific, gitignored) 竊・cross-machine sync + local privacy.
 
-[LEARN:memory] Post-merge hooks prompt reflection, don't auto-append → user maintains control while building habit.
+[LEARN:memory] Post-merge hooks prompt reflection, don't auto-append 竊・user maintains control while building habit.
 
 ## Meta-Governance
 
-[LEARN:meta] Repository dual nature requires explicit governance: what's generic (commit) vs specific (gitignore) → prevents template pollution.
+[LEARN:meta] Repository dual nature requires explicit governance: what's generic (commit) vs specific (gitignore) 竊・prevents template pollution.
 
-[LEARN:meta] Dogfooding principles must be enforced: plan-first, spec-then-plan, quality gates, session logs → we follow our own guide.
+[LEARN:meta] Dogfooding principles must be enforced: plan-first, spec-then-plan, quality gates, session logs 竊・we follow our own guide.
 
-[LEARN:meta] Template development work (building infrastructure, docs) doesn't create session logs in quality_reports/ → those are for user work (slides, analysis), not meta-work. Keeps template clean for users who fork.
+[LEARN:meta] Template development work (building infrastructure, docs) doesn't create session logs in quality_reports/ 竊・those are for user work (slides, analysis), not meta-work. Keeps template clean for users who fork.
 
 [LEARN:skills] Codex repository-local skills should be stored as .agents/skills/<skill-name>/SKILL.md. Keep that path as source-of-truth, and use scripts/install_repo_skills.py only when global installation to $CODEX_HOME/skills is needed.
+
+[LEARN:skills] When importing skills from an external repo subfolder, copy each skill directory to .agents/skills/<name>, keep linked assets (for example references/), and remove temporary clones from explorations/ before finalizing to avoid noisy diffs.
+
