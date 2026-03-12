@@ -70,3 +70,5 @@ When a mistake is corrected, append a `[LEARN:category]` entry below.
 [LEARN:meta] Dogfooding principles must be enforced: plan-first, spec-then-plan, quality gates, session logs → we follow our own guide.
 
 [LEARN:meta] Template development work (building infrastructure, docs) doesn't create session logs in quality_reports/ → those are for user work (slides, analysis), not meta-work. Keeps template clean for users who fork.
+
+[LEARN:skills] Codex repository-local skills should be stored as .agents/skills/<skill-name>/SKILL.md. Keep that path as source-of-truth, and use scripts/install_repo_skills.py only when global installation to $CODEX_HOME/skills is needed.

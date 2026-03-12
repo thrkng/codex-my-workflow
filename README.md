@@ -1,4 +1,4 @@
-# Codex Academic Workflow Template
+﻿# Codex Academic Workflow Template
 
 Codex-first template for academic production workflows: lecture slides, papers, replication, and analysis.
 
@@ -19,6 +19,7 @@ Example first prompt:
 - Structured workflow for planning, execution, verification, and reporting
 - Templates for requirements specs, session logs, and quality reports
 - Automation scripts for Quarto deployment and quality scoring
+- Repository-local Codex skills in `.agents/skills/` (including imported R skills)
 - Reusable directories for slides, figures, scripts, and explorations
 
 ## Directory Layout
@@ -28,6 +29,8 @@ my-project/
 ├── AGENTS.md
 ├── MEMORY.md
 ├── Bibliography_base.bib
+├── .agents/
+│   └── skills/
 ├── Figures/
 ├── Preambles/
 ├── Slides/
@@ -58,6 +61,10 @@ TEXINPUTS=../Preambles:$TEXINPUTS xelatex -interaction=nonstopmode file.tex
 
 # Compute quality score
 python scripts/quality_score.py Quarto/file.qmd
+
+# Install repository skills globally
+python scripts/install_repo_skills.py --dry-run
+python scripts/install_repo_skills.py
 ```
 
 ## Customization Checklist

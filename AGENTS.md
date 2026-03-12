@@ -1,4 +1,4 @@
-# AGENTS.md
+﻿# AGENTS.md
 
 ## Project
 - Name: [YOUR PROJECT NAME]
@@ -23,6 +23,7 @@
 - `scripts/`: automation and analysis scripts
 - `quality_reports/`: plans, logs, quality reports
 - `templates/`: reusable templates
+- `.agents/skills/`: repository-managed Codex skills
 - `explorations/`: experimental work
 
 ## Operating Workflow
@@ -51,6 +52,10 @@ TEXINPUTS=../Preambles:$TEXINPUTS xelatex -interaction=nonstopmode file.tex
 
 # Quality scoring
 python scripts/quality_score.py Quarto/file.qmd
+
+# Install repository skills to $CODEX_HOME/skills
+python scripts/install_repo_skills.py --dry-run
+python scripts/install_repo_skills.py
 ```
 
 ## Session Logging
@@ -60,3 +65,5 @@ python scripts/quality_score.py Quarto/file.qmd
 ## Notes
 - This repository intentionally targets Codex-first collaboration.
 - Legacy Claude-specific configuration has been removed.
+- Imported R skills are stored under `.agents/skills`.
+- Use `python scripts/install_repo_skills.py` to copy repository skills into `$CODEX_HOME/skills` for global reuse.
